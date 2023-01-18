@@ -1,0 +1,31 @@
+modules:
+  jira:projectPage:
+    - key: analysis-reports
+      title: 'Analysis Reports'
+      icon: https://cdn-icons-png.flaticon.com/512/6744/6744989.png
+      resource: customui-subpages
+      layout: basic
+      sections:
+        - pages:
+            - title: Task Analysis Report
+              route: /task-analysis-report
+            - title: Rework Analysis Report
+              route: /rework-analysis-report
+            - title: LifeCycle Analysis Report
+              route: /lifecycle-analysis-report
+            - title: Cost Analysis Report
+              route: /cost-analysis-report
+resources:
+  - key: customui-subpages
+    path: static/app/build
+    tunnel:
+      port: 3000
+permissions:
+  content:
+    styles:
+      - 'unsafe-inline'
+  external:
+    images:
+      - '*.flaticon.com'
+app:
+  id: ari:cloud:ecosystem::app/37f0e0ea-e590-4119-8749-26b20c7d9e05

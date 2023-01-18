@@ -1,0 +1,11 @@
+{
+  "name": "analysis-reports",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+  },
+  "dependencies": {
+    "@forge/resolver": "^1.4.0"
+  }
+}
